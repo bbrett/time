@@ -1,8 +1,13 @@
 module.exports = {
     "env": {
-        "browser": true
+        "browser": true,
+        "commonjs": true,
+        "es6": true
     },
     "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module"
+    },
     "rules": {
         "indent": [
             "error",
@@ -14,7 +19,7 @@ module.exports = {
         ],
         "quotes": [
             "error",
-            "double"
+            "single"
         ],
         "semi": [
             "error",
